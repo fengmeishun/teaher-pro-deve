@@ -7,7 +7,9 @@ Page({
      * 页面的初始数据
      */
     data: {
+        //轮播图数组
         swiperList: [],
+        //成长项目数组
         growUpItemList: []
     },
 
