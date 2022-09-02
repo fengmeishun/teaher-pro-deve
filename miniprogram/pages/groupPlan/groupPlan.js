@@ -5,12 +5,12 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        msg: 1
     },
 
-    upArticle(){
+    upArticle() {
         wx.navigateTo({
-          url: '../article/article',
+            url: '../article/article',
         })
     },
 
