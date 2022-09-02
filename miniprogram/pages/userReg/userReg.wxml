@@ -1,0 +1,51 @@
+<view class="reg-container">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="reg-item">
+            <text>用户注册</text>
+        </view>
+        <view class="reg-item">
+            <text>学段：</text>
+            <radio-group name="stage" bindchange="getSchool">
+                <label wx:for="{{stagelist}}" wx:key="_id">
+                    <radio value="{{item._id}}" />{{item.title}}
+                </label>
+            </radio-group>
+        </view>
+        <view class="reg-item">
+            <text>学校：</text>
+            <picker bindchange="bindPickerChange_school" value="{{index_school}}" range="{{schoolList}}" range-key="schoolName" class="picker-school"  name="picker_school">
+                <view class="picker">
+                    {{schoolList[index_school].schoolName}}
+                </view>
+            </picker>
+        </view>
+        <view class="reg-item">
+            <text>学科：</text>
+            <picker bindchange="bindPickerChange_subject" value="{{index_subject}}" range="{{subjectList}}" range-key="subjectName" class="picker-school"  name="picker_subject">
+                <view class="picker">
+                    {{subjectList[index_subject].subjectName}}
+                </view>
+            </picker>
+        </view>
+        <view class="reg-item">
+            <text>姓名：</text>
+            <input type="text" class="reg-input" name="userName" />
+        </view>
+        <view class="reg-item">
+            <text>手机号：</text>
+            <input type="text" class="reg-input" name="userLogin" />
+        </view>
+        <view class="reg-item">
+            <text>密码：</text>
+            <input type="text" class="reg-input" name="userPass1"/>
+        </view>
+        <view class="reg-item">
+            <text>重复密码：</text>
+            <input type="text" class="reg-input" name="userPass2"/>
+        </view>
+        <view class="btn-area">
+            <button style="margin: 30rpx 0" type="primary" formType="submit">提交</button>
+            <button style="margin: 30rpx 0" formType="reset">重置</button>
+        </view>
+    </form>
+</view>

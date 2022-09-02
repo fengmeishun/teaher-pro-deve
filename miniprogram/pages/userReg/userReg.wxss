@@ -1,0 +1,33 @@
+/* pages/userReg/userReg.wxss */
+.reg-container{
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: column;
+    margin: 10rpx;
+}
+.reg-item{
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx 0;
+}
+.reg-item text{
+    width: 80px;
+    text-align: end;
+}
+.reg-item:nth-child(1) text{
+    flex: 1;
+    text-align: center;
+    color: rgb(10, 73, 26);
+    font-size: 20px;
+    font-weight: 800;
+}
+.picker-school{
+    flex:1;
+    /* background-color: cadetblue; */
+    border-bottom: 1px solid gray;
+    height: 30px;
+}
+.reg-input{
+    flex:1;
+   border-bottom: 1px solid gray;
+}

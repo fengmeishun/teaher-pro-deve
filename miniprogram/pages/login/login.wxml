@@ -1,0 +1,21 @@
+<view class="login-container">
+    <form catchsubmit="formSubmit">
+        <view class="login-items">
+            <text>用户登录</text>
+        </view>
+        <view class="login-items">
+            <text>手机号：</text>
+            <input name="userlogin" type="text" placeholder="请输入手机号" />
+        </view>
+        <view class="login-items">
+            <text>密码：</text>
+            <input name="userpass" password="{{showpass}}" type="text"  placeholder="请输入密码"/>
+            <text bindtap="showpassword">{{showpass?"显示密码":"隐藏密码"}}</text>
+        </view>
+        <view class="btn-area">
+            <button class="submit-btn" type="primary" formType="submit">登录</button>
+            <!-- <button  formType="reset">重置</button> -->
+        </view>
+    </form>
+    <view class="user-reg" bindtap="userReg">点我注册</view>
+</view>

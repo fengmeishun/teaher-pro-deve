@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+<swiper autoplay indicator-dots circular>
+    <swiper-item wx:for="{{swiperList}}" wx:key="_id">
+        <image src="{{item.picurl}}"></image>
+    </swiper-item>
+</swiper>
+<view class="grid-list">
+    <navigator class="grid-item" url="/pages/groupPlan/groupPlan">
+        <i class="iconfont icon-jitihukou iconSize"></i>
+        <text>集体备课</text>
+    </navigator>
+    <navigator class="grid-item" url="/pages/groupPlan/groupPlan">
+        <i class="iconfont icon-lijitingke iconSize"></i>
+        <text>听评课</text>
+    </navigator>
+    <navigator class="grid-item" url="/pages/groupPlan/groupPlan">
+        <i class="iconfont icon-dajiangtang iconSize"></i>
+        <text>大讲堂</text>
+    </navigator>
+</view>
+<view class="grid-list">
+    <view class="grid-item">
+        <i class="iconfont icon-lunwentimu iconSize"></i>
+        <text>教学论文</text>
+    </view>
+    <view class="grid-item">
+        <i class="iconfont icon-a-zu17628 iconSize"></i>
+        <text>课题研究</text>
+    </view>
+    <view class="grid-item">
+        <i class="iconfont icon-airudiantubiaohuizhi-zhuanqu_aidushu iconSize"></i>
+        <text>专著研读</text>
+    </view>
+</view>

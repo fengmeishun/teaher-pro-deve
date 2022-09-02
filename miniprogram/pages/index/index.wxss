@@ -1,0 +1,31 @@
+/* pages/home/home.wxss */
+swiper{
+    height: 350rpx;
+}
+swiper image{
+    height: 100%;
+    width: 100%;
+}
+
+.grid-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.grid-item{
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iconSize{
+    font-size: 60rpx;
+    color:#1296db;
+    padding-bottom: 10rpx;
+}
+.grid-item text{
+    width: 48px;
+    text-align: center;
+    font-size: 24rpx;
+}

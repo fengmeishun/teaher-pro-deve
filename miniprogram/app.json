@@ -1,0 +1,37 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/userReg/userReg",
+        "pages/myinfo/myinfo",
+        "pages/groupPlan/groupPlan",
+        "pages/article/article"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "盐城经开区教科研",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#0000",
+        "selectedColor": "#1380f7",
+        "backgroundColor": "#f6f6f6",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/index1.png",
+                "selectedIconPath": "images/index2.png"
+            },
+            {
+                "pagePath": "pages/myinfo/myinfo",
+                "text": "我的",
+                "iconPath": "images/my1.png",
+                "selectedIconPath": "images/my2.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

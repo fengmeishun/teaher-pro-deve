@@ -1,0 +1,6 @@
+<view class="article-container">
+<view>教学论文</view>
+    <view class="up-article" bindtap="upArticle">
+       <i class="iconfont icon-jiahao up-article-add"></i>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/groupPlan/groupPlan.wxss */
+.article-container{
+    position: relative;
+    height: 100%;
+}
+.up-article{
+    position: absolute;
+    bottom: 50rpx;
+    right:50rpx;
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+}
+.up-article-add{
+    font-size: 60rpx;
+}
